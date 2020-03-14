@@ -4,6 +4,6 @@ We used the YOLO approach to develop an object-detection model using Neural Netw
 UI was developed in Java using JavaFX.  
 
 
-**Project contributors:**
+**Project contributors:**  
 Muhammad Noffel Khan (i160273)  
 Rehman Gul (i160306)
