@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="faa.SearchByDateController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="34.0" layoutY="14.0" prefHeight="531.0" prefWidth="786.0">
+         <children>
+            <JFXButton fx:id="show" buttonType="RAISED" layoutX="494.0" layoutY="351.0" onAction="#showHandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="Show" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <Label accessibleRole="CONTEXT_MENU" layoutX="14.0" layoutY="-28.0" prefHeight="107.0" prefWidth="624.0" text="Search Records by date" textFill="#600190" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="datePicker" defaultColor="#c749f5" layoutX="480.0" layoutY="102.0" onAction="#datePicked" promptText="Select Date" />
+            <TreeTableView fx:id="Table" layoutX="-12.0" layoutY="66.0" prefHeight="451.0" prefWidth="431.0">
+               <columns>
+                  <TreeTableColumn fx:id="StudentId" prefWidth="109.0" resizable="false" sortable="false" text="ID" />
+                  <TreeTableColumn fx:id="StudentName" prefWidth="170.0" resizable="false" sortable="false" text="Name" />
+                  <TreeTableColumn fx:id="StudentSection" editable="false" minWidth="0.0" prefWidth="151.0" resizable="false" sortable="false" text="Section" />
+               </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

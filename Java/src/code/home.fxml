@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faa.HomeController">
+   <children>
+      <Label accessibleRole="CONTEXT_MENU" layoutX="79.0" layoutY="-30.0" prefHeight="107.0" prefWidth="624.0" text="FAST Autonomous Attendance System" textFill="#600190" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="289.0" fitWidth="270.0" layoutX="14.0" layoutY="77.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="recordButton" buttonType="RAISED" layoutX="336.0" layoutY="77.0" onAction="#recordHandler" prefHeight="66.0" prefWidth="343.0" ripplerFill="#ddd5d5" style="-fx-background-color: #ff3333;" text="Start Recording" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="idSearch" buttonType="RAISED" layoutX="342.0" layoutY="212.0" onAction="#searchIdHandler" prefHeight="66.0" prefWidth="166.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="Search by ID" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="dateSearch" buttonType="RAISED" layoutX="523.0" layoutY="212.0" onAction="#SearchDateHandler" prefHeight="66.0" prefWidth="160.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="Search by date" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="idSearch1" buttonType="RAISED" layoutX="379.0" layoutY="299.0" onAction="#searchIdHandler" prefHeight="66.0" prefWidth="252.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="Attendance Percentage" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

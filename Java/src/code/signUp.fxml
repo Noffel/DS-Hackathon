@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="name" prefHeight="506.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faa.signUPController">
+   <children>
+      <JFXButton fx:id="sign" buttonType="RAISED" layoutX="83.0" layoutY="427.0" onAction="#signHandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="sign up" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label accessibleRole="CONTEXT_MENU" layoutX="98.0" layoutY="-20.0" prefHeight="107.0" prefWidth="661.0" text="FAST Autonomous Attendance System" textFill="#600190" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="ID" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="26.0" layoutY="60.0" prefHeight="34.0" prefWidth="257.0" promptText="Login ID" style="-fx-background-color: 0;" unFocusColor="#631dcd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="adminName" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="26.0" layoutY="113.0" prefHeight="34.0" prefWidth="257.0" promptText="name" style="-fx-background-color: 0;" unFocusColor="#631dcd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="26.0" layoutY="170.0" prefHeight="34.0" prefWidth="257.0" promptText="New Password" style="-fx-background-color: #cbd0ed;" unFocusColor="#3302d3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <AnchorPane fx:id="ImagePane" layoutX="32.0" layoutY="256.0" />
+      <JFXRippler layoutX="253.0" layoutY="414.0" />
+      <JFXPasswordField fx:id="repassword" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="26.0" layoutY="219.0" prefHeight="34.0" prefWidth="257.0" promptText="Re-enter password" style="-fx-background-color: #cbd0ed;" unFocusColor="#3302d3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <DatePicker fx:id="date" layoutX="29.0" layoutY="273.0" prefHeight="34.0" prefWidth="264.0" promptText="Date of Birth" />
+      <JFXTextField fx:id="address" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="26.0" layoutY="319.0" prefHeight="34.0" prefWidth="257.0" promptText="address" style="-fx-background-color: 0;" unFocusColor="#631dcd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="phone" alignment="CENTER" focusColor="#9014e4" labelFloat="true" layoutX="32.0" layoutY="370.0" prefHeight="34.0" prefWidth="257.0" promptText="phone" style="-fx-background-color: 0;" unFocusColor="#631dcd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <ImageView fx:id="image" fitHeight="358.0" fitWidth="380.0" layoutX="331.0" layoutY="94.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

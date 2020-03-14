@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="310.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faa.WarningController">
+   <children>
+      <Label fx:id="WarnText" accessibleRole="CONTEXT_MENU" layoutX="52.0" layoutY="18.0" prefHeight="186.0" prefWidth="446.0" text="Please enter valid information!" textAlignment="CENTER" textFill="#cc0c00" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="OK" buttonType="RAISED" layoutX="189.0" layoutY="204.0" onAction="#OKHandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="OK" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
